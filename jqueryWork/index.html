@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .wrap {
+            height: 500px;
+            width: 700px;
+            margin-top: 45px;
+            margin-left: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wrap img {
+            height: 500px;
+            width: 700px;
+        }
+
+        .left {
+            height: 30px;
+            width: 40px;
+            border-radius: 18px;
+            background-color:Grey;
+            opacity: 0.3;
+            position: absolute;
+            left: -15px;
+            top: 250px;
+            overflow: hidden;
+
+        }
+        .s1{
+            position: absolute;
+            left:20px;
+            top:0px;
+            color:#fff;
+            font-weight: bolder;
+            
+        }
+
+        .left:hover {
+            opacity: 0.95;
+        }
+
+        .right {
+            height: 30px;
+            width: 40px;
+            border-radius: 18px;
+            background-color: grey;
+            opacity: 0.3;
+            position: absolute;
+            right: -15px;
+            top: 250px;
+            overflow: hidden;
+        }
+        .s2{
+            position: absolute;
+            right:20px;
+            top:0px;
+            color:#fff;
+            font-weight: bolder;
+            
+        }
+        .right:hover{
+            opacity: 0.95;
+        }
+        .bottom {
+            position: absolute;
+            left: 20px;
+            bottom: 5px;
+        }
+
+        .bottom li {
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            display: inline-block;
+            opacity: 0.7;
+        }
+
+        .bottom li:hover {
+            background-color:#fff;
+        
+            opacity: 0.99;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 采用的是修改图片的路径，每次点击修改的是图片的路径 -->
+    <!-- 用全局变量来计算是哪个当前是哪个图片 index -->
+    <div class="wrap">
+        <img id="image">
+        <div class="left"><span class="s1"> < </span></div>
+        <div class="right"><span class="s2">></span></div>
+                <ul class="bottom">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+    </div>
+    <script src='./jquery.js'></script>
+    <script>
+        //1,图片设置自动切换到下一张 用定时器 每一次都修改图片的路径
+        //全局变量
+        var index = 1;
+        var arr = $("li");
+        arr[0].style.backgroundColor="#fff";
+        arr[0].style.opacity=0.99;
+        arr[0].style.boxShadow="0px 0px 3px 3px DarkGray";
+        $("#image").attr("src", 'images/' + index + '.jpg');
+        function setIndex(idx) {
+            console.log(idx + ', ' + index);
+            btnCss(idx);
+            $("#image").attr("src", 'images/' + idx + '.jpg');
+            index = idx;
+            timeInter();
+        }
+
+        var timeId;
+        function timeInter() {
+            clearInterval(timeId);
+            timeId = setInterval(function () {
+                index++;
+                if (index == 9) {
+                    index = 1;
+                }
+                setIndex(index);
+            }, 3000)
+        }
+        //2,实现左右按钮的效果，点击左右按钮切换图片 
+        //滑上去的时候，背景颜色透明度要加深
+        //需要给左右按钮添加点击按钮 点击它就修改下一张图片的路径 特殊的是当最后一张图片的时候切换到第一张图片 第一张图片点击左按钮需要切换到第7张
+        function getImage1(value) {
+            $(value).click(function () {
+
+                if (index == 1) setIndex(8);
+                // else if(index==8)setIndex(1);
+                else setIndex(index - 1);
+                // btnCss(index);
+
+            })
+        }
+        //定义右边按钮的效果
+        function getImage2(value) {
+            $(value).click(function () {
+                
+                if (index == 8) setIndex(1);
+                else setIndex(index + 1);
+
+            })
+        }
+
+        function getImage3(value) {
+            //滑动下面的圆圈按钮，滑到对应的按钮，图片切换到对应的下标
+            //实现index和按钮下标对应
+            //修改样式，当滑上按钮的时候，按钮的样式改变
+            var list = document.getElementsByTagName(value);
+            for (let i = 0; i < 8; i++) {
+                list[i].onmouseenter = function () {
+                    setIndex(i + 1);
+                }
+            }
+        }
+        //实现实时修改小按钮的样式效果
+        function btnCss(idx) {
+            for (let i = 0; i < arr.length; i++) {
+                if (i == idx - 1) {
+                    // console.log('bai' + i);
+                    arr[i].style.backgroundColor = '#fff';
+                    arr[i].style.opacity = 0.99;
+                    arr[i].style.boxShadow="0px 0px 3px 3px DarkGray";
+                } else {
+                    // console.log('kong' + i);
+                    arr[i].style.backgroundColor = "#fff";
+                    arr[i].style.opacity = 0.7;
+                    arr[i].style.boxShadow="0px 0px 0px 0px DarkGray";
+                }
+            }
+        }
+        //左边按钮的效果
+        getImage1('.left');
+        getImage1('.s1');
+
+        getImage2(".right");
+        getImage2(".s2");
+
+        //实现最下方的小原点切换图片
+        getImage3("li")
+        //实现下标和index同步
+        timeInter();
+
+    </script>
+</body>
+
+</html>
