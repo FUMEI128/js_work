@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='css/bootstrap.css'>
+    <style>
+        /* .container{
+            background-color:#dddddd;
+        } */
+        .row{
+            margin-left:0px;
+            margin-right:0px;
+        }
+        .row1{
+            padding-left:0px;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .row1{
+            padding-left:15px;
+            padding-right:15px;
+            background-color: black;
+            color:#fefefe;
+            text-align: center;
+            font-size:10px;
+        }
+        .col-md-4 span{
+            margin-left:20px;
+
+        }
+        .nav_1{
+            margin-bottom: 0px;
+        }
+        .navbar-brand img{
+            width:100px;
+            height:30px;
+            margin-left:80%;
+        }
+        .make{
+            display: none;
+        }
+        .navbar-toggle{
+            border:0px solid red;
+
+        }
+        .navbar-toggle span{
+            margin-bottom: 10px;
+        }
+        .list{
+            margin-left:20%;
+        }
+        .list li{
+            margin-left:50px;
+            margin-bottom:5px;
+        }
+        .c1_1{
+            border-bottom: 3px #cc5505 solid;
+            color:#cc5505;
+        }
+        .c1:active{
+            border-bottom:3px #cc5505 solid;
+            color:#cc5505'
+        }
+        .throw3{
+                width:653px;
+                display: none;
+               
+               
+            }
+        .row2_img img{
+            width:100%;
+            margin-right:0px;
+        }
+        .row2_1{
+                position:absolute;
+                margin-top: -65px;
+                border-radius: 15px;
+                margin-left:350px;
+            }
+            .row2{
+                padding:0px;
+                margin-right:0px;
+            }
+            .form_btn{
+                position:relative;
+                width:400px;
+                height:35px;
+                font-size: 10px;
+                border-radius: 10px;
+            }
+            .little{
+                color:#e1e1df;
+                background-color:red;
+                width:80px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;;
+            }
+            .map{
+                margin-left:100px;
+                position:absolute;
+                top:0px;
+                left:-50px;
+                background-color: #d4d3d9;
+                height:34px;
+                text-align: center;
+                width:80px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;;
+            }
+             .map img{
+                height:18px;
+                width:15px;
+                margin-top:10px;
+                position:relative;
+                left:-22px;
+            }
+            .text{
+                height:100%;
+                width:100%;
+               position: absolute;
+               top:8px;
+               left:-10px;
+               color:#76757a;
+            }
+            .wrap{
+                width:100%;
+                height:2270px;
+                background-color:#dddddd;
+                position:relative;
+                text-align: center;
+            }
+            .row3_1{
+                overflow: hidden;
+            }
+            .row3_1 img{
+                margin-top:20px;
+            }
+            .row3_2{
+                height:364px;
+                background-color: #14316d;
+                font-size: 20px;
+                /* position: absolute; */
+                margin-top:20px;
+            }
+            .row3_2 img{
+                margin-top:50px;
+                margin-left:25px;
+            }
+            .row3_2 button{
+                margin-top:40px;
+                margin-left:5px;
+                width:150px;
+                height:40px;
+                background-color:#14316d ;
+                color:#fff;
+                font-size: 20px;
+            }
+            .row3_2 p{
+                margin-left:30px;
+                font-size: 20px;
+                color:#fff;
+                margin-top:15px;
+            }
+            /* 替换的效果 */
+           .backimg{
+               /* border:1px solid red; */
+           } 
+           .t1{
+               font-size:25px;
+               letter-spacing: 5px;
+           }
+           .box{
+               height:750px;
+               position: relative;
+           }
+           .back_left{
+               height:100%;
+               width:430px;
+               float:left;
+               position:relative;
+           }
+           .back_left img{
+               width:430px;
+               height:375px;
+               position: relative;
+           }
+           .back_right{
+               width:500px;
+               height:100%;
+               float:right;
+               position:relative;
+               border:1px red solid;
+               position:absolute;
+               top:0px;
+               right:0px;
+           }
+           .back_right img{
+               width:535px;
+               height:250px;
+               margin-left:-35px;
+               
+           }
+           .col-md-10{
+               padding-left:0px;
+               padding-right:0px;
+           }
+           .ls11{
+               position:absolute;
+               height:55px;
+               top:320px;
+               left:0px;
+               width:430px;
+               background-color: black;
+               color:#fff;
+           }
+           .ls11 .p1,.ls22 .p1{
+               margin-left:-200px;
+               font-size:10px;
+               margin-top:10px;
+           }
+           .ls11 .p2,.ls22 .p2{
+               margin-left:-325px;
+           }
+           .ls22{
+               position:absolute;
+               bottom:0px;
+               width:430px;
+               height: 55px;
+               background-color: black;
+               color:#fff;
+           }
+           .ls33{
+               position:absolute;
+               top:200px;
+               width:535px;
+               background-color: black;
+               opacity: 0.6;
+               right:0px;
+               border:1px red solid;
+               color:#fff;
+           }
+           .ls44{
+               position: absolute;
+               top:440px;
+               right:0px;
+               background-color: black;
+               color:#fff;
+               width:535px;
+               opacity: 0.6;
+           }
+           .ls44 .p1{
+               margin-left:-280px;
+               font-size:12px;
+           }
+           .ls44 .p2{
+               margin-left:-380px;
+           }
+           .ls55 .p1,.ls33 .p1{
+               margin-left:-208px;
+               font-size:12px;
+           }
+           .ls55{
+               position:absolute;
+               bottom:0px;
+               background-color: black;
+               color:#fff;
+               right:0px;
+               width:535px;
+               opacity: 0.6;
+           }
+           .ls33 .p2{
+               margin-left:-400px;
+           }
+           .ls55 .p2{
+               margin-left:-380px;
+           }
+           .back_left .btn{
+               position: absolute;
+               bottom:0px;
+               display: none;
+
+           }
+           .last_img2 img{
+               width:100%;
+           }
+              /* 设置导航响应式布局用媒体查询 */
+        .last_text{
+            color:black;
+        }
+        .last_img .col-md-4 , .last_img .col-md-6{
+            padding-left:0px;
+            padding-right:0px;
+        }
+        .tim2{
+            display: none;
+        }
+        .last_text .k1{
+            font-size:35px;
+            margin-top:10px;
+        }
+        .lastdiv1 img{
+            width:100%;
+        }
+        .lastdiv2{
+            background-color:#1c5080;
+            color:#fff;
+            height:268px;
+        }
+       .wrap_div{
+           background-color: #1c5080;
+           height:335px;
+       }
+       .wrap_div .lm{
+           display:inline-block;
+           color:#fff;
+           width:243px;
+           margin-top:20px;
+       }
+      .img1{
+           height:150px;
+           width:150px;
+       }
+       .img1_text{
+          margin-top:-100px;
+       }
+       .pp2{
+           margin-top:50px;
+       }
+      .img1_2{
+          margin-top:10px;
+      }
+      .lm2_img2{
+          height:56px;
+      }
+      .endding{
+          background-color: black;
+          width:100%;
+          height:330px;
+      }
+      .footwrap{
+          position: relative;
+          color:#fff;
+
+      }
+      .footwrap li{
+          list-style: none;
+          height:50px;
+          margin-top:20px;
+      }
+      .li11 div{
+          display: inline-block;
+          margin-left:30px;
+          width:115px;
+      } 
+      .ldiv1{
+          font-size:20px;
+
+      }
+      .ldiv1 span{
+          position:absolute;
+          top:20px;
+          font-size:20px;
+          margin-left:-10px;
+          
+      }
+      .end{
+          margin-left:30px;
+          width:80px;
+      }
+      /* .li22 div{
+          display: inline-block;
+          margin-left:10px;
+      }
+      .li22{
+          position: relative;
+      }
+      .li22_d1{
+          font-size:20px;
+      } 
+      /* .li22_d2{
+          font-size:12px;
+          margin-top:10px;
+      } */ */
+      .l11s p{
+          text-align: center;
+      }
+      .lm{
+          margin-left:20px;
+      }
+      .li22_d2s{
+          margin-left:-50px;
+      }
+      .li44_t2{
+          margin-left:-40px;
+      }
+      .dend{
+          height:100px;
+          background-color: black;
+          width:100%;
+          color:#fff;
+          text-align: center;
+          font-size:12px;
+      }
+      .mk{
+          display: none;
+          opacity: 0;
+      }
+      .bucong{
+            height:500px;
+            display: none;
+        }
+        .bucong li{
+            list-style:none;
+            height:100px;
+        }
+        .budiv{
+            height:200px;
+           background-color: black;
+           color:#fff;
+           text-align: center;
+           font-size:16px;
+           position: relative;
+        }
+      @media screen and (max-width: 768px){
+            .container{
+                padding-left:0px;
+                padding-right:0px;
+            }
+            .row{
+                margin-top:15px;
+            }
+            .row1{
+                display: none;
+            }
+            .navbar{
+                background-color: #fff;
+                border-width:0px;
+            }
+
+            .make{
+                margin-left:430px;
+                margin-top:15px;
+                background-color:#f64509;
+                color:#fefefe;
+                display:block;
+            }
+            .row2{
+                position:relative;
+                top:-10px;
+                width:100%;
+
+            }
+            .row2_1{
+                margin-left:15%;
+            }
+            .btn2{
+                width:450px;
+            }
+            .wrap{
+                background-color: #f5f5f5;
+                margin-top:-10px;
+                width:100%;
+                overflow: hidden;
+            }
+            .row3{
+                position: relative;
+                z-index:-9999;
+                display: none;
+            }
+            .throw3 img{
+                margin-top:45px;
+            }
+            .throw3{
+                height: 200px;
+                position:absolute;
+                background-color: #fff;
+                display:block;
+                width:100%;
+            }
+            .throw3 li{
+                display: inline-block;
+            }
+            .ls1{
+                margin-top:15px;
+                float:left;
+
+            }
+            .ls2{
+                float:left;
+                margin-top:47px;
+                margin-left:10px;
+            }
+            /* .p1{
+                font-size:30px;
+                color:#1d5181;
+            } */
+            .p2,.p3,.ls3{
+                color:#8f8f8f;
+            }
+            .ls3 button{
+                margin-top:80px;
+                background-color:#fff;
+                font-size:30px;
+                border:1px solid #b8b8b8;
+                margin-left:20px;
+                border-radius: 10px;
+            }
+            .backimg{
+                margin-top:238px;
+                background-color: #fff;
+                position:relative;
+                padding-left:10px;
+                padding-right: 10px;
+                height:1000px;
+            }
+            .backimg .t1{
+                height:60px;
+                letter-spacing: 1px;
+                
+            }
+            .t1 span{
+               margin-top:10px;
+               display: inline-block;
+               border-left:2px red solid;
+               margin-left:-500px;
+               width:120px;
+               
+            }
+            .t2{
+                margin-bottom: 20px;
+                font-size:0px;
+                border-top:1px #e8e8e8 solid;
+            }
+            .back_right{
+                display:none;
+            }
+            .back_left{
+                width:615px;
+            }
+            .back_left img{
+                width:615px;
+                margin-top:30px;
+            }
+            .ls11{
+                opacity: 0.8;
+                width:615px;
+                height:100px;
+                color:#fff;
+            }
+            .ls11 .p1{
+                font-size:20px;
+                color:#fff;
+                float:left;
+                margin-left:10px;
+            }
+            .ls11 .p2{
+                color:#fff;
+                margin-right:-200px;
+                margin-top:20px;
+            }
+            .num1,.num2{
+                font-size:30px;
+            }
+            .ls22{
+                height:100px;
+                width:100%;
+                margin-bottom: -60px;
+                color:#fff;
+            }
+            .ls22 .p1{
+                color:#fff;
+                margin-left:-350px;
+                font-size:20px;
+            }
+            .ls22 .p2{
+                float:right;
+                margin-top:-50px;
+                margin-right:30px;
+                color:#fff;
+            }
+            .p1_span{
+                display: block;
+                margin-left:-85px;
+            }
+            .p2_span{
+                display: block;
+                margin-left:-85px;
+                color:#fff;
+            }
+            .p2_span2{
+                margin-left:-18px;
+            }
+            .back_left .btn{
+                display: block;
+                position:absolute;
+                width:200px;
+                height:50px;
+                left:220px;
+                bottom:-140px;
+                color:#adadad;
+                font-size:20px;
+                background-color: #fff;
+                border:1px #adadad  solid;
+                }
+                .last_img{
+                    margin-top:180px;
+                    background-color: #fff;
+                }
+                .last_div1{
+                    height:60px;
+                    border-bottom: 1px #e8e8e8 solid;
+                }
+                .last_div1 p{
+                    float:left;
+                    margin-left:10px;
+                    height:50px;
+                }
+                .last_div1 .k1{
+                    border-left:2px red solid;
+                    height:30px;
+                }
+                .last_div1 .k2{
+                    margin-top:15px;
+                    font-size:20px;
+
+                }
+                .lastdiv2{
+                    background-color: #fff;
+                    color:black;
+                    margin-top:20px;
+                    line-height: 25px;
+                }
+                .tim1{
+                    font-size:0px;
+                    display:none;
+                }
+                .tim2{
+                    display: block;
+                    font-size:20px;
+                    margin-top:10px;
+
+                }
+                .lm{
+                    float:left;
+                    height:200px;
+                    width:100%;
+                }
+                .lm p{
+                    float:left;
+                }
+                .endding{
+                    margin-top:200px;
+                    display: none;
+                }
+                .dend{
+                    display: none;
+                }
+                .mk{
+                    display: block;
+                    font-size:20px;
+                    opacity: 0.9;
+                    color:#fff;
+                }
+                .wrap_div{
+                    margin-top:-270px;
+                    display: none;
+                }
+                .bucong{
+                    display: block;
+                }
+                .bucong li img{
+                    margin-left:100px;
+                    margin-top:10px;
+                }
+                .bucong li span{
+                    display: inline-table;
+                    margin-left:50px;
+                    width:300px;
+                    height:100px;
+                    font-size:16px;
+                }
+                .bup{
+                    position: absolute;
+                    top:60px;
+                    left:200px;
+                }
+
+
+        }
+        .num{
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 首页导航部分 -->
+        <!-- 最上面的nav，用媒体查询，当屏幕是手机的大小的时候，修改整个页面的样式   修改display -->
+        <div class="row row1">
+            <div class="col-md-4 col-md-offset-8"><img src="img/tell.png">400-808-8682
+                <span>请登录&nbsp&nbsp&nbsp |&nbsp&nbsp&nbsp 注册</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-default nav_1" > 
+			<div class="container-fluid">
+				<!-- 标题类 -->
+			  	<div class="navbar-header">
+			    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-1">
+			      		<span class="sr-only">导航开关</span>
+			      		<span class="icon-bar"></span>
+			      		<span class="icon-bar"></span>
+			      		<span class="icon-bar"></span>
+			    	</button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                    <button type="button" class="btn btn-default make">快速定制</button>
+			  	</div>
+			  	<div class="collapse navbar-collapse" id="bs-1">
+			    	<ul class="nav navbar-nav list">
+			      		<li class="c1 c1_1"><a href="#" style="color:#cc5505;">首页</a></li>
+			      		<li class="c1"><a href="#">热门路线</a></li>
+			      		<li class="c1"><a href="#">签证推荐</a></li>
+						<li class="c1"><a href="#">使命愿景</a></li>  
+			    	</ul>   
+				</div>
+			</div>
+        </nav>
+        <div class="">
+            <div class="row2_img"><img class="img-responsive"src="img/banner.jpg">
+                    <form role='form' class="col-md-4 col-md-offset-4 row2_1 has-feedback form_btn">
+                            <input  class="form-control btn2"type="text" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   |    日本     美国      英国     地中海">
+                            <span class="glyphicon glyphicon-search form-control-feedback little"></span>
+                            <span class="map"><img src="img/position.png"><span class="text">目的地</span></span>
+                    </form>
+            </div>
+        </div>
+        <!-- 第三部分的效果 -->
+        <div class="wrap">
+        <div class="row row3">
+            <div class=" col-md-8  col-md-offset-1 row3_1"><img src="img/Sbanner2.jpg"></div>
+            <div class="col-md-2 row3_2">
+                <div><img src="img/car.png"></div>
+                <p>车辆接送</p>
+                <button class="btn btn-default">查看详情</button>
+            </div>
+             <!-- 用于替换上面的显示的效果 -->
+        </div>
+        <!-- 用于替换上面的显示的效果 -->
+        <div class="row throw3">
+            <li class="ls1"><img src="img/carH.png"></li>
+            <li class="ls2">
+            <p class="p1">机场接送，省心省力</p>
+            <p class="p2">提供上海,苏州，无锡各市</p>
+            <p class="p3">往返机场，码头接送服务，更有包车服务</p>
+            </li>
+            <li class="ls3"><button class="btn">查看详情</button></li>
+        </div>
+    <!-- 图片部分 -->
+      <div class="backimg">
+          <p class="t1"><span>热门线路</span></p>
+          <p class="t2">Popular tourist routes</p>
+          <div class="col-md-10 col-md-offset-1 box">
+            <div class="back_left">
+                <img src="img/hot1.jpg"><div class=" ls ls11"><p class="p1"><span class="p1_span">海南三亚5天4晚</span>纯玩，4晚红树林度假王国</p><p class="p2">￥<span class="num1 num">2580</span>/人起</p></div>
+                <img src="img/hot2.jpg"><div class=" ls ls22"><p class="p1"><span class="p2_span">德国瑞意欧洲4国,</span><span class="p2_span2">ABCD任意线路由您挑选</span></p><p class="p2">￥<span class="num2 num">7999</span>/人起</p></div>
+                <button class="btn xianshi">查看更多<img src="img/hotR.png" style="height:15px;width:10px;margin-top:0px;margin-left:10px;"></button>
+            
+            </div>
+            <div class="back_right">
+                <img src="img/hot3.jpg"><div class=" ls ls33"><p class='p1'>曼谷+芭提雅  国际五星 赠送2220大礼包，绝无自费</p><p class="p2">￥<span class="num">2799</span>/人起</p></div>
+                <img src="img/hot4.jpg"><div class=" ls ls44"><p class="p1">日本本州游 樱花，寿司,温泉,美食</p><p class="p2">￥<span class="num">5399</span>/人起</p></div>
+                <img src="img/hot5.jpg"><div class=" ls ls55"><p class="p1">斯里兰卡7天6晚全景游  保证入住2晚香格里拉</p><p class="p2">￥<span class="num">7999</span>/人起</p></div>
+           </div> 
+        </div>
+
+        <div class="last_img">
+            <div class="last_text col-md-4 col-md-offset-4 last_div1"><p class="k1" style="font-size:25px">&nbsp&nbsp使命与愿景</p><p class="k2">让旅游回归本质，体验纯粹旅游</p></div>
+            <div class="col-md-4 col-md-offset-1 lastdiv1"><img src="img/mission1.jpg"></div>
+            <div class="col-md-6 col=col-md-offset-4 lastdiv2">
+                <p class="tim1" style="font-size:20px;margin-top:45px;">服务理念及优势</p>
+                <p class="tim2">--服务理念--</p>
+                <p style="text-align: left;margin-left:60px;line-height:38px;">“英华逸游”通过重新造旅游全程中的产品线路设计、出行交通方案，<br>
+                    陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸<br>
+                    游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提<br>
+                    供性价比高的产品和服务。
+                </p>
+            </div>
+            <div class="col-md-10 col-md-offset-1 last_img2"><img class="img-responsive" src="img/mission2.jpg"></div>
+            <div class="wrap_div col-md-10 col-md-offset-1">
+               <div class="mk">--服务优势--</div>
+                <div class="lm1 lm">
+                    <img class="img1" src="img/rorate.png">
+                    <div class="img1_text">
+                        <img class="img2" src="img/icon1.png">
+                        <p>品质行程</p>
+    
+                    </div>
+                    <p class="pp2">旅游达人精心设计，基于口碑反复打磨,<br>全网最好，敢跟任何产品比</p>
+                </div>
+                <div class="lm2 lm">
+                    <img class="img1 img1_2" src="img/rorate.png">
+                    <div class="img1_text">
+                        <img class="img2 lm2_img2" src="img/icon2.png">
+                        <p>品质消费</p>
+    
+                    </div>
+                    <p class="pp2">不推自费,<br>不进垃圾购物点和伪景点</p>
+                </div>
+                <div class="lm3 lm">
+                    <img class="img1 img1_2" src="img/rorate.png">
+                    <div class="img1_text">
+                        <img class="img2" src="img/icon3.png">
+                        <p>品质小团</p>
+    
+                    </div>
+                    <p class="pp2">独立成团不散拼,<br>只跟亲朋好友一起玩，每天发团</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+    <!-- 最后一部分的图片效果 -->
+    <!-- footer -->
+     <div class="endding">
+        <div class="footwrap col-md-10 col-md-offset-1">
+            <li class="li11">
+                <div class="ldiv ldiv1"><span>合作伙伴</span></div>
+                <div class="l11s">
+                    <img src="img/xiecheng.png">
+                    <p>携程网</p>
+                </div>
+                <div>
+                    <img src="img/feizhu.png">
+                    <p>阿里飞猪</p>
+                </div>
+                <div>
+                    <img src="img/quna.png">
+                    <p>去哪儿</p>
+                </div>
+                <div class="end">
+                    <img src="img/suzhou.png">
+                    <p>苏州旅游局</p>
+                </div>
+            </li>
+            <li class="li22">
+                 <div class="li22_d1 col-md-2"  style="font-size:20px">热门位置</div>
+                 <div class="li22_d2 col-md-10" style="font-size:12px;margin-left:-40px;">韩国&nbsp&nbsp日本&nbsp&nbsp菲律宾&nbsp&nbsp越南&nbsp&nbsp老挝&nbsp&nbsp柬埔寨&nbsp&nbsp泰国&nbsp&nbsp马来西亚&nbsp&nbsp新加坡&nbsp&nbsp印度尼西亚&nbsp&nbsp印度&nbsp&nbsp斯里兰&nbsp&nbsp卡土耳&nbsp&nbsp其阿联酋&nbsp&nbsp西班牙&nbsp&nbsp意大利&nbsp&nbsp希腊&nbsp&nbsp法国&nbsp&nbsp比利时&nbsp&nbsp荷兰<br>
+                    英国&nbsp&nbsp&nbsp瑞士&nbsp&nbsp&nbsp奥地利c德国&nbsp&nbsp&nbsp匈牙利&nbsp&nbsp&nbsp俄罗斯&nbsp&nbsp&nbsp捷克&nbsp&nbsp&nbsp芬兰&nbsp&nbsp&nbsp葡萄牙&nbsp&nbsp&nbsp冰岛&nbsp&nbsp&nbsp美国&nbsp&nbsp&nbsp加拿大&nbsp&nbsp&nbsp巴西&nbsp&nbsp&nbsp阿根廷&nbsp&nbsp&nbsp澳大利亚&nbsp&nbsp&nbsp新西兰</div>
+            </li>
+            <li class="li33">
+                <div style="font-size:12px;"><span style="font-size:20px;margin-right:10px;margin-left:12px;margin-right:20px;">主题服务</span>海岛度假&nbsp&nbsp&nbsp历史文化&nbsp&nbsp&nbsp探索冒险&nbsp&nbsp&nbsp美食购物&nbsp&nbsp&nbsp都市生活&nbsp&nbsp&nbsp海外游学&nbsp&nbsp&nbsp邮轮度假&nbsp&nbsp&nbsp蜜月摄影&nbsp&nbsp&nbsp亲子乐园</div>
+            </li>
+            <li class="li44 "><div class="col-md-2"style="font-size:20px">友情链接</div>
+                <div class="col-md-10 li44_t2 mm" style="font-size:12px; line-height:20px;">马蜂窝&nbsp&nbsp&nbsp穷游booking&nbsp&nbsp&nbsp苏州旅游局&nbsp&nbsp&nbsp驴友网&nbsp&nbsp&nbsp吾爱全球签证中&nbsp&nbsp&nbsp酒店团购&nbsp&nbsp&nbsp携带旅游攻略&nbsp&nbsp&nbsp天巡职航在线&nbsp&nbsp&nbsp满天飞旅游网&nbsp&nbsp&nbsp中国旅游网&nbsp&nbsp背包兔旅游行程<br>
+                出境旅游 国际酒店 广州旅行社 出境旅游 517旅行 花生游 家园网 海外婚礼</div>
+            </li>
+        </div>
+        <div class="col-md-12" style="border-bottom: 1px #404040 solid;margin-top:30px;"></div>
+    </div>
+    <div class="col-md-4 dend">2020&nbsp&nbsp&nbsp&nbsp @苏州英华国旅游有限公司&nbsp版权所有</div>
+
+    <!-- 用于替换最后的效果 -->
+    <div class="bucong">
+        <p style="font-size:20px ;text-align:center;margin-top:35px;margin-left:-50px;">--服务优势--</p>
+        <li class="bul1">
+            <img src="img/icon11.png">
+            <span>旅游达人精心设计，基于口碑反复打磨,告别人山人海鸡肋景点，<br>全网最好，敢跟任何产品比</span>
+        </li>
+        <li class="bul2">
+            <img src="img/icon22.png">
+            <span>不推自费<br>不进垃圾购物店和伪景点</span>
+        </li>
+        <li class="bul3">
+            <img src="img/icon33.png">
+            <span>独立成团不散拼，只跟亲朋好友一起玩，每天发团</span>
+       </li>
+       <div class="budiv">
+           <p class="bup">苏ICP备号,2020<br>@s苏州英华国际旅游有限公司&nbsp&nbsp版权所有<br>技术支持，杭州科技</p>
+       </div>
+    </div>
+    
+    </div>
+    <script src='js/jquery.js'></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
